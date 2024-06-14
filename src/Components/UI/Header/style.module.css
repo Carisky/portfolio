@@ -1,0 +1,17 @@
+.header{
+    height: 8vh;
+    background-color: black;
+    display: flex;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.nav_item{
+    color: white;
+    margin: 10px;
+}
