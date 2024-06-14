@@ -1,0 +1,33 @@
+.title {
+  color: white;
+}
+.title span {
+  color: #facc16;
+}
+.description {
+  margin-top: 5px;
+  max-width: 40vw;
+  color: gray;
+}
+.services_container{
+
+    margin-top: 2vh;
+    display: flex;
+}
+
+.service{
+    height: 50vh;
+    aspect-ratio: 1/1;
+    background-color: #020617;
+    margin-right: 2vw;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+.service_wrapper{
+  margin: auto;
+}
