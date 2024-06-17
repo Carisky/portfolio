@@ -6,7 +6,7 @@ import Block from "../../Components/UI/Block/Block";
 export default function About() {
   return (
     <Block mode={"dark"}>
-      <div className={style.about_wrapper}>
+      <div id="about" className={style.about_wrapper}>
         <div className={classNames(style.photo_container)}>
           <div className={classNames(style.photo)}></div>
           <div className={classNames(style.photo_shadow)}></div>

@@ -40,7 +40,7 @@ export default function Home() {
 
   return (
     <Block>
-      <div className={style.home_wrapper}>
+      <div id="home" className={style.home_wrapper}>
         <div className={style.stack}>
           <animated.div className={classNames(style.item, style.greeting)} style={firstSpring}>
             Hello, Welcome!

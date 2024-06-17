@@ -32,7 +32,7 @@ export default function Service() {
       justifyContent={"center"}
       flex_dir={"column"}
     >
-      <div className={style.service_wrapper}>
+      <div id="service" className={style.service_wrapper}>
         <div className={style.description_block}>
           <h2 className={style.title}>
             My <span>Service</span>
