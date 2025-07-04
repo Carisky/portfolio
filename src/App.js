@@ -5,6 +5,7 @@ import About from "./ContentBlocks/About/About";
 import Home from "./ContentBlocks/Home/Home";
 import MiniGame from "./ContentBlocks/MiniGame/MiniGame";
 import Service from "./ContentBlocks/Services/Service";
+import Resume from "./ContentBlocks/Resume/Resume";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <About/>
         <Service/>
         <MiniGame/>
+        <Resume/>
       <Footer />
     </>
   );
