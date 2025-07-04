@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import Block from '../../Components/UI/Block/Block';
 import style from "./style.module.css"
+import { Box } from '@mui/material';
 function Square({ value, onSquareClick }) {
   return (
-    <div className={style.square} onClick={onSquareClick}>
+    <Box className={style.square} onClick={onSquareClick}>
       {value}
-    </div>
+    </Box>
   );
 }
 
@@ -33,22 +33,22 @@ function Board({ xIsNext, squares, onPlay }) {
 
   return (
     <>
-      <div className={style.status}>{status}</div>
-      <div className={style.board_row}>
+      <Box className={style.status}>{status}</Box>
+      <Box className={style.board_row}>
         <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
         <Square value={squares[1]} onSquareClick={() => handleClick(1)} />
         <Square value={squares[2]} onSquareClick={() => handleClick(2)} />
-      </div>
-      <div className={style.board_row}>
+      </Box>
+      <Box className={style.board_row}>
         <Square value={squares[3]} onSquareClick={() => handleClick(3)} />
         <Square value={squares[4]} onSquareClick={() => handleClick(4)} />
         <Square value={squares[5]} onSquareClick={() => handleClick(5)} />
-      </div>
-      <div className={style.board_row}>
+      </Box>
+      <Box className={style.board_row}>
         <Square value={squares[6]} onSquareClick={() => handleClick(6)} />
         <Square value={squares[7]} onSquareClick={() => handleClick(7)} />
         <Square value={squares[8]} onSquareClick={() => handleClick(8)} />
-      </div>
+      </Box>
     </>
   );
 }
@@ -68,19 +68,19 @@ export default function MiniGame() {
   }
 
   return (
-    <Block>
-      <div id="minigame" className={style.title}>
+    <Box>
+      <Box id="minigame" className={style.title}>
         {'Just Tic Tac Toe, i mean why not?)'}
-      </div>
-      <div className={style.game}>
-        <div className={style.game_board}>
+      </Box>
+      <Box className={style.game}>
+        <Box className={style.game_board}>
           <Board xIsNext={xIsNext} squares={squares} onPlay={handlePlay} />
-        </div>
-        <div className={style.game_info}>
-          <div onClick={restartGame}><ion-icon name="refresh-outline"></ion-icon></div>
-        </div>
-      </div>
-    </Block>
+        </Box>
+        <Box className={style.game_info}>
+          <Box onClick={restartGame}><ion-icon name="refresh-outline"></ion-icon></Box>
+        </Box>
+      </Box>
+    </Box>
   );
 }
 
