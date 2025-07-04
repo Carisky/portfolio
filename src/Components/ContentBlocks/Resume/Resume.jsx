@@ -1,6 +1,6 @@
 import React from 'react';
 import Block from '../../Components/UI/Block/Block';
-import SkillCard from '../../Components/UI/SkillCard/SkillCard';
+import SkillCard from '../../UI/SkillCard/SkillCard';
 import { Box, Typography } from '@mui/material';
 import { SiTypescript, SiJavascript, SiDocker, SiGit, SiGithub, SiNodedotjs, SiReact, SiMui, SiFastapi, SiGraphql, SiCss3, SiSass, SiHtml5, SiFigma } from 'react-icons/si';
 
