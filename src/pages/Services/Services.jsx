@@ -1,8 +1,6 @@
 import React from 'react'
 import PageWrapper from '../PageWrapper';
 import { Box } from '@mui/material';
-import PricingCard from '../../components/PreviewCard';
-import { Link } from 'react-router-dom';
 import PreviewCard from '../../components/PreviewCard';
 
 const services = [
