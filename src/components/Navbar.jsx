@@ -49,7 +49,6 @@ export default function Navbar() {
           <NavButton to="/services">Услуги</NavButton>
           <NavButton to="/pricing">Цены</NavButton>
           <NavButton to="/contacts">Контакты</NavButton>
-          <NavButton to="/about">Обо мне</NavButton>
           <NavButton to="/portfolio">Портфолио</NavButton>
         </Box>
       </nav>

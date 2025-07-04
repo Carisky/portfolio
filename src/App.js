@@ -1,7 +1,6 @@
 import "./App.css";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import About from "./pages/About";
 import AppWrapper from "./components/AppWrapper";
 import Pricing from "./pages/Pricing";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
@@ -23,7 +22,6 @@ function App() {
         <Router>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contacts" element={<Contacts />} />
