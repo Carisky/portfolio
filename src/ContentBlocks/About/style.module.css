@@ -1,0 +1,39 @@
+.about_wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.photo {
+  height: 60vh;
+  aspect-ratio: 1/1;
+  background-color: antiquewhite;
+}
+.me{
+    color: #facc16;
+}
+.about {
+  color: white;
+}
+.about_content {
+  margin-left: 80px;
+}
+.description {
+  margin-top: 5px;
+  max-width: 40vw;
+  color: gray;
+}
+
+.contact_button{
+    margin-top: 20px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #facc16;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}

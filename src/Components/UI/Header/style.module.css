@@ -1,0 +1,27 @@
+.header{
+    height: 8vh;
+    background-color: black;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+    margin-right: 40px;
+}
+
+.nav_item{
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.nav_item:hover{
+    color: #facc16;
+}
+
