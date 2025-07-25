@@ -1,18 +1,20 @@
 import { useParams } from 'react-router-dom';
 import { Box, Typography } from '@mui/material';
 import PageWrapper from './PageWrapper';
-import services from '../data/services';
+import servicesData from '../data/services';
+import { useLang } from '../contexts/LanguageContext';
 
 export default function AboutService() {
+  const { lang, t } = useLang();
   const { serviceId } = useParams();
-  const service = services.find(s => s.id === serviceId);
+  const service = servicesData[lang].find(s => s.id === serviceId);
 
   if (!service) {
     return (
       <PageWrapper>
         <Box sx={{ p: 4 }}>
           <Typography variant="h4" gutterBottom>
-            Услуга не найдена
+            {t('aboutService.notFound')}
           </Typography>
         </Box>
       </PageWrapper>

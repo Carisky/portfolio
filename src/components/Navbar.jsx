@@ -1,8 +1,10 @@
 import { Box, Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
+import { useLang } from "../contexts/LanguageContext";
 
 export default function Navbar() {
+  const { lang, toggleLang, t } = useLang();
   const NavElementSx = {
     color: "inherit",
     textTransform: "none",
@@ -24,7 +26,7 @@ export default function Navbar() {
     <Box sx={{ width: "100%", height: "3wh", backgroundColor: "#000" }}>
       <nav className={styles.nav}>
         <Box>
-          <NavButton to="/">Главная</NavButton>
+          <NavButton to="/">{t('nav.home')}</NavButton>
         </Box>
         <Box
           sx={{
@@ -46,10 +48,13 @@ export default function Navbar() {
             display: "flex",
           }}
         >
-          <NavButton to="/services">Услуги</NavButton>
-          <NavButton to="/pricing">Цены</NavButton>
-          <NavButton to="/contacts">Контакты</NavButton>
-          <NavButton to="/portfolio">Портфолио</NavButton>
+          <NavButton to="/services">{t('nav.services')}</NavButton>
+          <NavButton to="/pricing">{t('nav.pricing')}</NavButton>
+          <NavButton to="/contacts">{t('nav.contacts')}</NavButton>
+          <NavButton to="/portfolio">{t('nav.portfolio')}</NavButton>
+          <Button onClick={toggleLang} sx={NavElementSx}>
+            {lang === 'ru' ? 'PL' : 'RU'}
+          </Button>
         </Box>
       </nav>
     </Box>
