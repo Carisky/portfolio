@@ -28,16 +28,14 @@ export default function PreviewCard({
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">
-          <HashLink smooth to={learnMore} >
+        <HashLink smooth to={learnMore}>
+          <Button variant="outlined" size="small">
             Learn More
-          </HashLink>
-        </Button>
-        <Button size="small">
-          <HashLink smooth to={options} >
-            Options
-          </HashLink>
-        </Button>
+          </Button>
+        </HashLink>
+        <HashLink smooth to={options}>
+          <Button variant="outlined" size="small">Options</Button>
+        </HashLink>
       </CardActions>
     </Card>
   );
