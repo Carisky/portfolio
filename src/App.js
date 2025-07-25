@@ -9,6 +9,7 @@ import Portfolio from "./pages/Portfolio";
 import NotFound from "./pages/NotFound";
 import Contacts from "./pages/Contacts";
 import Services from "./pages/Services/Services";
+import AboutService from "./pages/AboutService";
 const darkTheme = createTheme({
   palette: {
     mode: "dark",
@@ -26,6 +27,7 @@ function App() {
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/about/:serviceId" element={<AboutService />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Router>
