@@ -10,6 +10,7 @@ import NotFound from "./pages/NotFound";
 import Contacts from "./pages/Contacts";
 import Services from "./pages/Services/Services";
 import AboutService from "./pages/AboutService";
+import { LanguageProvider } from "./contexts/LanguageContext";
 const darkTheme = createTheme({
   palette: {
     mode: "dark",
@@ -17,22 +18,24 @@ const darkTheme = createTheme({
 });
 function App() {
   return (
-    <AppWrapper>
-      <ThemeProvider theme={darkTheme}>
-        <CssBaseline />
-        <Router>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/pricing" element={<Pricing />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/contacts" element={<Contacts />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/about/:serviceId" element={<AboutService />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </Router>
-      </ThemeProvider>
-    </AppWrapper>
+    <LanguageProvider>
+      <AppWrapper>
+        <ThemeProvider theme={darkTheme}>
+          <CssBaseline />
+          <Router>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/pricing" element={<Pricing />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/contacts" element={<Contacts />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/about/:serviceId" element={<AboutService />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </Router>
+        </ThemeProvider>
+      </AppWrapper>
+    </LanguageProvider>
   );
 }
 
