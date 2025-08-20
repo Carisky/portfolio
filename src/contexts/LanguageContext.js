@@ -11,7 +11,7 @@ const translations = {
     },
     notFound: {
       title: "404 — Страница не найдена",
-      backHome: "Проверьте адрес или вернитесь на <a href='/'">главную</a>.",
+      backHome: "Проверьте адрес или вернитесь на <a href='/'>главную</a>",
     },
     aboutService: {
       notFound: "Услуга не найдена",
@@ -23,7 +23,7 @@ const translations = {
   },
   pl: {
     nav: {
-      home: "Strona główna",
+      home: "Główna",
       services: "Usługi",
       pricing: "Cennik",
       contacts: "Kontakt",
@@ -31,7 +31,7 @@ const translations = {
     },
     notFound: {
       title: "404 — Strona nie znaleziona",
-      backHome: "Sprawdź adres lub wróć na <a href='/'">stronę główną</a>.",
+      backHome: "Sprawdź adres lub wróć na <a href='/'>stronę główną</a>.",
     },
     aboutService: {
       notFound: "Usługa nie znaleziona",
