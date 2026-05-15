@@ -8,22 +8,19 @@ export const pricing = {
           id: "landing",
           label: "Лендинг",
           price: 400,
-          description:
-            "Небольшой сайт-визитка для презентации услуги или продукта. Обычно состоит из одной страницы с секциями.",
+          description: "Одностраничный сайт с сильной первой секцией, блоками пользы, формой заявки и адаптивом.",
         },
         {
           id: "corp",
           label: "Корпоративный сайт",
           price: 800,
-          description:
-            "Сайт компании с разделами об услугах, команде, контактах. Позволяет управлять контентом через админку.",
+          description: "Несколько страниц, структура услуг, контакты, базовая SEO-подготовка и возможность расширения.",
         },
         {
           id: "shop",
           label: "Интернет-магазин",
           price: 1200,
-          description:
-            "Каталог товаров, корзина, оформление заказов, фильтры и админка для управления ассортиментом.",
+          description: "Каталог, фильтры, карточка товара, корзина, оформление заказа и базовая админ-логика.",
         },
       ],
     },
@@ -35,22 +32,19 @@ export const pricing = {
           id: "auth",
           label: "Авторизация",
           price: 200,
-          description:
-            "Регистрация, вход, восстановление пароля, права доступа. Реализовано через JWT или сессии.",
+          description: "Регистрация, вход, восстановление пароля, роли и безопасная работа с пользовательскими данными.",
         },
         {
           id: "orders",
           label: "Обработка заказов",
           price: 300,
-          description:
-            "Создание и хранение заказов в базе, email-уведомления клиенту и администратору.",
+          description: "Создание заказов, хранение в базе, статусы, уведомления клиенту и администратору.",
         },
         {
           id: "api",
           label: "REST API",
           price: 250,
-          description:
-            "Серверный API для связи с фронтом, админкой или внешними сервисами. Стандарты REST, JSON.",
+          description: "Эндпоинты для фронтенда, админки или внешних сервисов с понятной JSON-структурой.",
         },
       ],
     },
@@ -62,76 +56,67 @@ export const pricing = {
           id: "pages",
           label: "Управление страницами",
           price: 200,
-          description:
-            "Возможность добавлять и редактировать страницы через админку без программиста.",
+          description: "Редактирование страниц, текстов и изображений через понятный интерфейс без правки кода.",
         },
         {
           id: "collections",
           label: "Списки и блоки",
           price: 250,
-          description:
-            "Динамические списки (товары, новости, услуги) с кастомной структурой и блоками контента.",
+          description: "Динамические коллекции для товаров, услуг, новостей или кейсов с кастомными полями.",
         },
         {
           id: "roles",
           label: "Разделение доступа",
           price: 150,
-          description:
-            "Ограничение доступа к админке — редактор, администратор, клиент и т.д.",
+          description: "Роли редактора, администратора или клиента, чтобы каждый видел только нужные разделы.",
         },
       ],
     },
     {
       id: "i18n",
-      title: "Локализация & мультиязык",
+      title: "Локализация и мультиязык",
       options: [
         {
           id: "frontend",
           label: "Перевод интерфейса",
           price: 150,
-          description:
-            "Мультиязычные кнопки, меню, формы и структура сайта на разных языках.",
+          description: "Меню, кнопки, формы, состояния и системные сообщения на нескольких языках.",
         },
         {
           id: "content",
           label: "Перевод контента",
           price: 200,
-          description:
-            "Поддержка перевода текста, блоков, названий и ссылок через CMS или вручную.",
+          description: "Структура для текстов страниц, карточек, ссылок и блоков через код или CMS.",
         },
         {
           id: "seo",
-          label: "Мультиязычный SEO",
+          label: "Мультиязычное SEO",
           price: 100,
-          description:
-            "URL‑структура, мета-теги и hreflang для поисковой оптимизации на всех языках.",
+          description: "URL-структура, мета-теги и hreflang, чтобы языковые версии корректно индексировались.",
         },
       ],
     },
     {
       id: "markup",
-      title: "Pixel‑perfect верстка",
+      title: "Pixel-perfect верстка",
       options: [
         {
           id: "figma",
           label: "Верстка по Figma",
           price: 300,
-          description:
-            "Точная адаптация дизайна в HTML/CSS. Внимание к мелочам, пиксель-в-пиксель.",
+          description: "Точный перенос макета в React/HTML/CSS с контролем типографики, отступов и сетки.",
         },
         {
           id: "responsive",
           label: "Адаптивная верстка",
           price: 200,
-          description:
-            "Поддержка всех экранов: мобильные, планшеты, десктопы. Медиа-запросы, flex/grid.",
+          description: "Отдельная проработка мобильных, планшетных и десктопных состояний интерфейса.",
         },
         {
           id: "animation",
-          label: "Мини-анимации",
+          label: "Микроанимации",
           price: 100,
-          description:
-            "Плавные появления, ховеры, переходы. CSS/JS-анимации без перегрузки.",
+          description: "Плавные появления, hover-состояния и переходы, которые не мешают пользоваться сайтом.",
         },
       ],
     },
@@ -141,23 +126,21 @@ export const pricing = {
       options: [
         {
           id: "hosting",
-          label: "Заливка на хостинг/VPS",
+          label: "Заливка на hosting/VPS",
           price: 100,
-          description: "Размещение проекта на хостинге клиента или настройка VPS.",
+          description: "Публикация проекта, настройка окружения, сборки и базового процесса обновления.",
         },
         {
           id: "ssl",
-          label: "Настройка домена и SSL",
+          label: "Домен и SSL",
           price: 100,
-          description:
-            "Привязка домена, установка HTTPS (Let's Encrypt), базовая защита.",
+          description: "Подключение домена, HTTPS, базовые настройки Nginx или панели хостинга.",
         },
         {
           id: "support",
           label: "Поддержка после запуска",
           price: 150,
-          description:
-            "Исправления, обновления, консультации в течение 1 месяца после релиза.",
+          description: "Мелкие правки, обновления и консультации в течение первого месяца после релиза.",
         },
       ],
     },
@@ -171,22 +154,19 @@ export const pricing = {
           id: "landing",
           label: "Landing page",
           price: 400,
-          description:
-            "Niewielka strona-wizytówka do prezentacji usługi lub produktu. Zwykle jedna strona z sekcjami.",
+          description: "Jedna strona z mocnym pierwszym ekranem, blokami korzyści, formularzem i responsywnością.",
         },
         {
           id: "corp",
           label: "Strona firmowa",
           price: 800,
-          description:
-            "Strona firmy z działami o usługach, zespole, kontaktach. Umożliwia zarządzanie treścią przez panel.",
+          description: "Kilka podstron, struktura usług, kontakt, podstawowe SEO i możliwość dalszej rozbudowy.",
         },
         {
           id: "shop",
           label: "Sklep internetowy",
           price: 1200,
-          description:
-            "Katalog produktów, koszyk, składanie zamówień, filtry i panel do zarządzania asortymentem.",
+          description: "Katalog, filtry, karta produktu, koszyk, składanie zamówień i podstawowa logika panelu.",
         },
       ],
     },
@@ -198,22 +178,19 @@ export const pricing = {
           id: "auth",
           label: "Autoryzacja",
           price: 200,
-          description:
-            "Rejestracja, logowanie, reset hasła, prawa dostępu. Implementacja na JWT lub sesjach.",
+          description: "Rejestracja, logowanie, reset hasła, role i bezpieczna obsługa danych użytkownika.",
         },
         {
           id: "orders",
           label: "Obsługa zamówień",
           price: 300,
-          description:
-            "Tworzenie i przechowywanie zamówień w bazie, powiadomienia email do klienta i administratora.",
+          description: "Tworzenie zamówień, baza danych, statusy oraz powiadomienia dla klienta i administratora.",
         },
         {
           id: "api",
           label: "REST API",
           price: 250,
-          description:
-            "Serwerowe API do komunikacji z frontendem, panelem lub usługami zewnętrznymi. Standardy REST, JSON.",
+          description: "Endpointy dla frontendu, panelu albo usług zewnętrznych z czytelną strukturą JSON.",
         },
       ],
     },
@@ -225,22 +202,19 @@ export const pricing = {
           id: "pages",
           label: "Zarządzanie stronami",
           price: 200,
-          description:
-            "Możliwość dodawania i edytowania stron przez panel bez udziału programisty.",
+          description: "Edycja stron, tekstów i obrazów przez prosty interfejs bez zmian w kodzie.",
         },
         {
           id: "collections",
           label: "Listy i bloki",
           price: 250,
-          description:
-            "Dynamiczne listy (produkty, newsy, usługi) z niestandardową strukturą i blokami treści.",
+          description: "Dynamiczne kolekcje dla produktów, usług, aktualności albo case studies z własnymi polami.",
         },
         {
           id: "roles",
           label: "Podział dostępu",
           price: 150,
-          description:
-            "Ograniczenie dostępu do panelu — redaktor, administrator, klient itd.",
+          description: "Role redaktora, administratora lub klienta, żeby każdy widział tylko potrzebne sekcje.",
         },
       ],
     },
@@ -252,22 +226,19 @@ export const pricing = {
           id: "frontend",
           label: "Tłumaczenie interfejsu",
           price: 150,
-          description:
-            "Wielojęzyczne przyciski, menu, formularze i struktura strony w różnych językach.",
+          description: "Menu, przyciski, formularze, stany i komunikaty systemowe w kilku językach.",
         },
         {
           id: "content",
           label: "Tłumaczenie treści",
           price: 200,
-          description:
-            "Wsparcie tłumaczenia tekstów, bloków, nazw i linków przez CMS lub ręcznie.",
+          description: "Struktura tekstów stron, kart, linków i bloków w kodzie albo CMS.",
         },
         {
           id: "seo",
           label: "Wielojęzyczne SEO",
           price: 100,
-          description:
-            "Struktura URL, meta tagi i hreflang dla optymalizacji w wyszukiwarkach na wszystkie języki.",
+          description: "Struktura URL, metatagi i hreflang, aby wersje językowe poprawnie się indeksowały.",
         },
       ],
     },
@@ -279,22 +250,19 @@ export const pricing = {
           id: "figma",
           label: "Kodowanie z Figma",
           price: 300,
-          description:
-            "Dokładne odwzorowanie projektu w HTML/CSS. Dbałość o detale, piksel w piksel.",
+          description: "Dokładne przeniesienie projektu do React/HTML/CSS z kontrolą typografii, odstępów i siatki.",
         },
         {
           id: "responsive",
           label: "Responsywne kodowanie",
           price: 200,
-          description:
-            "Wsparcie wszystkich ekranów: telefony, tablety, desktopy. Media queries, flex/grid.",
+          description: "Osobne dopracowanie widoków mobilnych, tabletowych i desktopowych.",
         },
         {
           id: "animation",
-          label: "Mini animacje",
+          label: "Mikroanimacje",
           price: 100,
-          description:
-            "Płynne pojawianie się, hovery, przejścia. Animacje CSS/JS bez obciążenia.",
+          description: "Płynne wejścia, stany hover i przejścia, które nie przeszkadzają w używaniu strony.",
         },
       ],
     },
@@ -304,24 +272,21 @@ export const pricing = {
       options: [
         {
           id: "hosting",
-          label: "Wgranie na hosting/VPS",
+          label: "Publikacja na hosting/VPS",
           price: 100,
-          description:
-            "Umieszczenie projektu na hostingu klienta lub konfiguracja VPS.",
+          description: "Publikacja projektu, konfiguracja środowiska, builda i podstawowego procesu aktualizacji.",
         },
         {
           id: "ssl",
-          label: "Konfiguracja domeny i SSL",
+          label: "Domena i SSL",
           price: 100,
-          description:
-            "Podpięcie domeny, instalacja HTTPS (Let's Encrypt), podstawowe zabezpieczenia.",
+          description: "Podpięcie domeny, HTTPS oraz podstawowa konfiguracja Nginx albo panelu hostingu.",
         },
         {
           id: "support",
           label: "Wsparcie po starcie",
           price: 150,
-          description:
-            "Poprawki, aktualizacje, konsultacje przez 1 miesiąc po premierze.",
+          description: "Drobne poprawki, aktualizacje i konsultacje przez pierwszy miesiąc po publikacji.",
         },
       ],
     },

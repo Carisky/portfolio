@@ -14,6 +14,34 @@ import { LanguageProvider } from "./contexts/LanguageContext";
 const darkTheme = createTheme({
   palette: {
     mode: "dark",
+    primary: {
+      main: "#d6e4ff",
+      contrastText: "#07111f",
+    },
+    background: {
+      default: "#07090d",
+      paper: "#11151b",
+    },
+  },
+  shape: {
+    borderRadius: 8,
+  },
+  typography: {
+    fontFamily: '"Open Sans", "Segoe UI", Arial, sans-serif',
+    button: {
+      letterSpacing: 0,
+      fontWeight: 800,
+    },
+  },
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          borderRadius: 8,
+          textTransform: "none",
+        },
+      },
+    },
   },
 });
 function App() {
