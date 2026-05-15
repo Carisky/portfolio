@@ -168,7 +168,7 @@ export default function Contacts() {
                     {/* Замените your_username на ваш логин */}
                     <Button
                       component={MLink}
-                      href="https://t.me/your_username"
+                      href="https://t.me/harnke"
                       target="_blank"
                       rel="noopener"
                       startIcon={<TelegramIcon />}
